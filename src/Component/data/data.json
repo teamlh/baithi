@@ -5,6 +5,7 @@
         "cauhoi": [
             {
                 "id": 1,
+                "type": "text",
                 "question": "What's your ... ?",
                 "answers": [
                     {
@@ -28,46 +29,48 @@
             },
             {
                 "id": 2,
-                "question": "What's your ... ?",
+                "type": "img",
+                "question": "What's your favorite picture ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://s1.haivn.com/data/400_2fee7412-1387-4b87-aaa5-ebe719d8f4f1.png"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://s1.haivn.com/data/400_4c559159-2aa1-48b7-8321-4efdb781b65d.jpg"
                     },
                     {
                         "id": "D",
-                        "text": "Huy1"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     }
                 ],
                 "correct": "A"
             },
             {
                 "id": 3,
+                "type": "sound",
                 "question": "What's your ... ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "D",
-                        "text": "Huy"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     }
                 ],
                 "correct": "A"
@@ -80,6 +83,7 @@
         "cauhoi": [
             {
                 "id": 1,
+                "type": "text",
                 "question": "What's your ... ?",
                 "answers": [
                     {
@@ -103,46 +107,48 @@
             },
             {
                 "id": 2,
+                "type": "img",
                 "question": "What's your ... ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://s1.haivn.com/data/400_2fee7412-1387-4b87-aaa5-ebe719d8f4f1.png"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://s1.haivn.com/data/400_4c559159-2aa1-48b7-8321-4efdb781b65d.jpg"
                     },
                     {
                         "id": "D",
-                        "text": "Huy"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     }
                 ],
                 "correct": "A"
             },
             {
                 "id": 3,
+                "type": "sound",
                 "question": "What's your ... ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "D",
-                        "text": "Huy"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     }
                 ],
                 "correct": "A"
@@ -155,6 +161,7 @@
         "cauhoi": [
             {
                 "id": 1,
+                "type": "text",
                 "question": "What's your ... ?",
                 "answers": [
                     {
@@ -178,46 +185,48 @@
             },
             {
                 "id": 2,
+                "type": "img",
                 "question": "What's your ... ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://s1.haivn.com/data/400_2fee7412-1387-4b87-aaa5-ebe719d8f4f1.png"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://s1.haivn.com/data/400_4c559159-2aa1-48b7-8321-4efdb781b65d.jpg"
                     },
                     {
                         "id": "D",
-                        "text": "Huy"
+                        "text": "https://nghialagi.vn/wp-content/uploads/sites/2/2019/01/anhchehot.jpg"
                     }
                 ],
                 "correct": "A"
             },
             {
                 "id": 3,
+                "type": "sound",
                 "question": "What's your ... ?",
                 "answers": [
                     {
                         "id": "A",
-                        "text": "Name"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "B",
-                        "text": "Nem"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "C",
-                        "text": "Nêm"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     },
                     {
                         "id": "D",
-                        "text": "Huy"
+                        "text": "http://drtpe3yp3e35w.cloudfront.net/original_audios/4de3a1d0541290fd3000000e_4f96806c505ca25d71000001.mp3"
                     }
                 ],
                 "correct": "A"

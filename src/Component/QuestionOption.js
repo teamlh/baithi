@@ -21,7 +21,7 @@ class QuestionOption extends Component {
                                         <div className="cauhoi1">
                                             {e.question}
                                         </div>
-                                        <Answer answer={e.answers} correct={e.correct} {...this.props} />
+                                        <Answer answer={e.answers} type={e.type} correct={e.correct} {...this.props} />
                                     </div>
                                 </div>
                             )
