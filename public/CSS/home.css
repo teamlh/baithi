@@ -351,3 +351,14 @@ img {
         margin-left: -2%;
     }
 }
+
+
+@media screen and (max-width:438px){
+    .container {
+        position: absolute;
+        background-color: antiquewhite;
+        padding: 110px 320px;
+        margin: 15px 236px;
+        margin-left: -64%;
+    }
+}
