@@ -40,35 +40,43 @@ class Home extends Component {
         });
     }
 
+    //function declartion for sorting by time
+    sortByTime = (a, b) => {
+            return ((a.thoigian == b.thoigian) ? 0 : ((a.thoigian > b.thoigian) ? 1 : -1 ));
+    }
 
     handleSortChange = (e) => {
-        const data3 = [...this.state.data].sort(function (x, y) {
-            var a = new Date(x.thoigian),
-                b = new Date(y.thoigian);
-            return a - b;
-        })
-        const data1 = [...this.state.data].sort((a, b) => (a.ten.toUpperCase() > b.ten.toUpperCase()) ? 1 : ((b.ten.toUpperCase() > a.ten.toUpperCase()) ? -1 : 0))
-        const data2 = [...this.state.data].sort((a, b) => (a.diem > b.diem) ? 1 : ((b.diem > a.diem) ? -1 : 0))
-        console.log(data2)
-        if (e.value === "ttg")
-            alert("3")
+       //check this line
         this.setState({
-            data: data3
+            data: this.state.data.sort(this.sortByTime)
         });
-        if (e.value === "tt")
-            alert("1")
-        this.setState({
-            data: data1
-        });
-        if (e.value === "td")
-            alert("2")
-        this.setState({
-            data: data2
-        });
+       
+        // const data3 = [...this.state.data].sort(function (x, y) {
+        //     var a = new Date(x.thoigian),
+        //         b = new Date(y.thoigian);
+        //     return a - b;
+        // })
+        // const data1 = [...this.state.data].sort((a, b) => (a.ten.toUpperCase() > b.ten.toUpperCase()) ? 1 : ((b.ten.toUpperCase() > a.ten.toUpperCase()) ? -1 : 0))
+        // const data2 = [...this.state.data].sort((a, b) => (a.diem > b.diem) ? 1 : ((b.diem > a.diem) ? -1 : 0))
+        // console.log(data2)
+        // if (e.value === "ttg")
+        //     alert("3")
+        // this.setState({
+        //     data: data3
+        // });
+        // if (e.value === "tt")
+        //     alert("1")
+        // this.setState({
+        //     data: data1
+        // });
+        // if (e.value === "td")
+        //     alert("2")
+        // this.setState({
+        //     data: data2
+        // });
     }
 
     render() {
-        console.log(this.state.data)
         const { auth } = this.props;
         const links = auth.uid ? <Success /> : <Fail />;
         const hay = auth.uid ? <Link to="/total">BẮT ĐẦU THI</Link> : <Link to="/signup">BẮT ĐẦU THI</Link>;
