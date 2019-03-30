@@ -1,0 +1,348 @@
+.navbar {
+    width: 100%;
+}
+
+ul.navbar1 {
+    color: black;
+    display: -webkit-box;
+    /* float: right; */
+    cursor: pointer;
+    background-color: #eff1f0;
+    /* width: 100%; */
+    margin-top: -8px;
+    margin-left: -6px;
+    padding: 20px;
+    /* padding-left: 1012px; */
+}
+
+li.navbar11 {
+    list-style: none;
+    padding: 3px 12px;
+}
+
+.duoi {
+    position: absolute;
+    margin-top: 100px;
+    display: -webkit-box;
+    padding: 7px 165px;
+}
+
+.bangxephang {
+    padding: 55px;
+    margin-top: -108px;
+}
+
+.right {
+    text-align: center;
+    margin-top: 88px;
+    display: grid;
+    margin-left: 120px;
+}
+
+.right button {
+    margin: 10px 5px;
+    background-color: white;
+    /* border-color: black; */
+    border: 1px solid black;
+    padding: 10px 24px;
+}
+
+
+.navbar2 {
+    float: right;
+    margin-right: 32px;
+}
+
+ul.right1 {
+    display: -webkit-box;
+}
+
+.right1 li {
+    list-style: none;
+    padding: 12px 17px;
+}
+
+.right1 a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bentrai {
+    font-size: 34px;
+    padding: 22px;
+    font-family: monospace;
+}
+
+.benphai {
+    margin-left: 5;
+    display: flex;
+    /* float: right; */
+    position: absolute;
+    margin-left: 558px;
+    padding: 22px 15px;
+}
+
+
+.bocauhoi {
+    border: 1px solid;
+    margin: 10px 14px;
+    border-radius: 10px;
+}
+
+.navbar111 {
+    text-align: center;
+    display: -webkit-inline-box;
+    margin: 100px;
+    background-color: #efefef;
+    padding: 125px 313px;
+}
+
+ul.bocauhoi1 {
+    padding: 0px 54px;
+}
+
+
+thead {
+    border: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    background-color: antiquewhite;
+}
+
+table.rtable {
+    border: 1px solid black;
+    /* border-color: black; */
+    padding: 0px 35px;
+}
+
+
+th {
+    padding: 5px 31px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 110px 320px;
+    margin: 15px 241px;
+    margin-left: 15%;
+}
+
+
+.input-field {
+    display: grid;
+    padding: 1px -8px;
+    margin-bottom: 10px;
+}
+
+h5.grey-text.text-darken-3 {
+    font-size: 33px;
+    font-family: monospace;
+    text-align: center;
+}
+
+input#email,input#password,input#firstName,input#lastName {
+    padding: 5px 60px;
+}
+
+label {
+    font-family: sans-serif;
+}
+
+button.btn.pink.lighten-1.z-depth-0 {
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    padding: 13px -4px;
+    margin: 8px 90px;
+    width: 113px;
+    height: 35px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.cautraloi {
+    display: grid;
+    margin: 0px 110px;
+}
+
+label.radioCustomLabel {
+    padding: 10px;
+}
+
+.well {
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+}
+
+.cauhoi {
+    background-color: antiquewhite;
+}
+
+.cauhoi1 {
+    font-size: 25px;
+    margin: 15px 68px;
+}
+
+span.pull-right {
+    margin: 1px 105px;
+}
+
+button.nutdua {
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    height: 28px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.Dropdown-root.react-dropdown {
+    border: 1px solid black;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.Dropdown-control {
+    border-bottom: 1px solid black;
+}
+
+
+/*Reponsive Web*/
+
+img {
+    max-width: 100%;
+  }
+
+/* @media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+ 
+}
+ 
+/* Portrait */
+/* @media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+ 
+}
+ 
+/* Landscape */
+/* @media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+ 
+}*/
+
+
+@media screen and (max-width:1150px){
+    .benphai{
+        display: none;
+        padding:22px 15px;
+        position: absolute;
+        margin-left: 558px
+    }
+    .container {
+        position: absolute;
+        background-color: antiquewhite;
+        padding: 110px 320px;
+        margin: 15px 241px;
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (max-width:868px){
+    .benphai{
+        display: none;
+        padding:22px 15px;
+        position: absolute;
+        margin-left: 558px
+    }
+    .duoi{
+        position: absolute;
+        margin-top: 100px;
+        display:block;
+        padding: 12px 70px;
+    }
+    .right{
+        display: grid;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .navbar111 {
+        text-align: center;
+        display: -webkit-inline-box;
+        margin: 100px;
+        background-color: #efefef;
+        padding: 83px 83px;
+    }
+
+    .container {
+        position: absolute;
+        background-color: antiquewhite;
+        padding: 110px 320px;
+        margin: 15px 241px;
+        margin-left: 0%;
+    }
+    
+}
+
+
+@media screen and (max-width:638px){
+    .benphai{
+        display: none;
+        padding:22px 15px;
+        position: absolute;
+        margin-left: 558px
+    }
+    .duoi{
+        position: absolute;
+        margin-top: 100px;
+        display:block;
+        padding: 12px 70px;
+    }
+    .right{
+        display: grid;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .navbar111 {
+        text-align: center;
+        display: block;
+        margin: 100px;
+        background-color: #efefef;
+        padding: 105px 53px;
+    }
+
+    ul.bocauhoi1 {
+        padding: 0px 26px;
+    }
+
+    .container {
+        position: absolute;
+        background-color: antiquewhite;
+        padding: 110px 320px;
+        margin: 15px 236px;
+        margin-left: -2%;
+    }
+}
