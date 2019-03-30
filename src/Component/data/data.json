@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "type": "JS",
+        "cauhoi": [
+            {
+                "id": 1,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy1"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 2,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy1"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 3,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy"
+                    }
+                ],
+                "correct": "A"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "type": "JAVA",
+        "cauhoi": [
+            {
+                "id": 1,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy2"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 2,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 3,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy"
+                    }
+                ],
+                "correct": "A"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "type": "HTML",
+        "cauhoi": [
+            {
+                "id": 1,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy3"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 2,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy"
+                    }
+                ],
+                "correct": "A"
+            },
+            {
+                "id": 3,
+                "question": "What's your ... ?",
+                "answers": [
+                    {
+                        "id": "A",
+                        "text": "Name"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Nem"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nêm"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Huy"
+                    }
+                ],
+                "correct": "A"
+            }
+        ]
+    }
+]
