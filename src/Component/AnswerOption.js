@@ -20,27 +20,85 @@ class AnswerOption extends Component {
         setCurrent(this.props.current + 1)
     }
 
+    LOL = () => {
+        if (this.props.type === "text") {
+            return (
+                this.props.answer.map((e) => {
+                    return (
+                        <label className="radioCustomLabel" key={e.id} >
+                            {e.id}
+                            <input
+                                type="radio"
+                                className="radioCustomButton"
+                                name="radioGroup"
+                                onChange={this.onChange}
+                                value={e.id}
+                            />
+                            {e.text}
+                        </label>
+                    )
+                }
+                ))
+        }
+    }
+    LOL1 = () => {
+        if (this.props.type === "img") {
+            return (
+                this.props.answer.map((e) => {
+                    return (
+                        <label className="radioCustomLabel" key={e.id} >
+                            {e.id}
+                            <input
+                                type="radio"
+                                className="radioCustomButton"
+                                name="radioGroup"
+                                onChange={this.onChange}
+                                value={e.id}
+                            />
+                            <img src={e.text} alt="" />
+                        </label>
+                    )
+                }
+                ))
+        }
+    }
+    LOL2 = () => {
+        if (this.props.type === "sound") {
+            return (
+                this.props.answer.map((e) => {
+                    return (
+                        <label className="radioCustomLabel" key={e.id} >
+                            {e.id}
+                            <input
+                                type="radio"
+                                className="radioCustomButton"
+                                name="radioGroup"
+                                onChange={this.onChange}
+                                value={e.id}
+                            />
+                            <audio controls>
+                                <source src={e.text} type="audio/mpeg" />
+                            </audio>
+                        </label>
+                    )
+                }
+                ))
+        }
+    }
+
 
     render() {
+
         return (
             <div className="cautraloi">
                 {
-                    this.props.answer.map((e) => {
-                        return (
-                            <label className="radioCustomLabel" key={e.id} >
-                                {e.id}
-                                <input
-                                    type="radio"
-                                    className="radioCustomButton"
-                                    name="radioGroup"
-                                    onChange={this.onChange}
-                                    value={e.id}
-                                />
-                                {e.text}
-                            </label>
-                        )
-
-                    })
+                    this.LOL()
+                }
+                {
+                    this.LOL1()
+                }
+                {
+                    this.LOL2()
                 }
             </div>
         )

@@ -217,6 +217,11 @@ button.nutdua {
     border-bottom: 1px solid black;
 }
 
+.radioCustomLabel img{
+    width:100px;
+    height: 100px;
+}
+
 
 /*Reponsive Web*/
 

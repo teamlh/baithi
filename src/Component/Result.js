@@ -37,9 +37,9 @@ class Results extends Component {
       <div className="well">
         <Success />
         <h4>You Got {this.props.score} out of {this.props.dodaichuan} Correct</h4>
-        <h1>{percent}% -{timer}- {message}-{profile.firstName +" " + profile.lastName}</h1>
+        <h1>{percent}% -{timer}- {message}-{profile.firstName + " " + profile.lastName}</h1>
         <button onClick={this.addData} className="nutdua">
-          <Link to="/">
+          <Link to="/" style={{ color: 'white' }}>
             Đưa Lên Bảng Xếp Hạng
           </Link>
         </button>
