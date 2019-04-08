@@ -12,6 +12,30 @@ class TotalQuestion extends Component {
             dataQ: data
         };
     }
+
+    hideButton = () => {
+        console.log(this.props.profile.admin)
+        if (this.props.profile.admin) {
+            return (
+                <div>
+                    <Link to='/add'>
+                        <button className="hello">
+                            <span className="hi">
+                                +
+                        </span>
+                            Add
+                    </button>
+                    </Link>
+                </div>
+            )
+        }
+        else {
+            return (
+                null
+            )
+        }
+    }
+
     render() {
         const { auth } = this.props
         if (!auth.uid) return <Redirect to='/' />
@@ -19,6 +43,7 @@ class TotalQuestion extends Component {
             <div>
                 <Header />
                 <div className="navbar111">
+                    {this.hideButton()}
                     {this.state.dataQ.map((i, e) => {
                         return (
                             <div className="bocauhoi" key={e}>
@@ -36,7 +61,8 @@ class TotalQuestion extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        profile: state.firebase.profile
     }
 }
 

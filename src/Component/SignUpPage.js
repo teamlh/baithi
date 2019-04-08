@@ -8,13 +8,22 @@ class SignUpPage extends Component {
         username: "",
         password: "",
         firstname: "",
-        lastname: ""
+        lastname: "",
+        admin: false
     }
 
 
-    handleChange = (e) => {
+    setCheckbox = () => {
         this.setState({
-            [e.target.id]: e.target.value
+            admin: true
+        });
+    }
+
+    handleChange = (e) => {
+        const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+        console.log(e.target)
+        this.setState({
+            [e.target.id]: value
         })
     }
 
@@ -24,6 +33,7 @@ class SignUpPage extends Component {
     }
 
     render() {
+        console.log(this.state)
         const { auth, authError } = this.props;
 
         if (auth.uid) return <Redirect to='/' />
@@ -46,6 +56,21 @@ class SignUpPage extends Component {
                     <div className="input-field">
                         <label htmlFor="lastName">Last Name</label>
                         <input type="text" id='lastName' onChange={this.handleChange} />
+                    </div>
+                    <div className="input-field">
+                        <label>
+                            Chọn Chức Năng ADMIN:
+                        </label>
+                        <div className="checkbox">
+                            <input
+                                id='admin'
+                                type="checkbox"
+                                onClick={this.setCheckbox}
+                                onChange={this.handleChange} />
+                            <label>
+                                ADMIN
+                            </label>
+                        </div>
                     </div>
                     <div className="input-field">
                         <button className="btn pink lighten-1 z-depth-0">Sign Up</button>

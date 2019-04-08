@@ -1,3 +1,11 @@
+//delete member
+export const getDeleteD = (id) => {
+    return (dispatch) => {
+        dispatch({ type: 'DELETE', id });
+    }
+}
+
+
 export const signIn = (credentials) => {
     return (dispatch, getState, { getFirebase }) => {
         const firebase = getFirebase();
@@ -34,7 +42,8 @@ export const signUp = (newUser) => {
             return firestore.collection('users').doc(resp.user.uid).set({
                 firstName: newUser.firstName,
                 lastName: newUser.lastName,
-                initials: newUser.firstName[0] + newUser.lastName[0]
+                initials: newUser.firstName[0].toUpperCase() + newUser.lastName[0].toUpperCase(),
+                admin: newUser.admin
             });
         }).then(() => {
             dispatch({ type: 'SIGNUP_SUCCESS' });

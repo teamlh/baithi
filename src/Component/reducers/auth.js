@@ -1,3 +1,5 @@
+import firebase from './../firebase'
+
 const initState = {
     authError: null
 }
@@ -9,6 +11,24 @@ const authReducer = (state = initState, action) => {
             return {
                 ...state,
                 authError: 'Login failed'
+            }
+
+        case 'DELETE':
+            firebase.ref('danhsach/' + action.id).remove()
+            return {
+                ...state
+            }
+
+        case 'GET_ADMIN_SUCCESS':
+            return {
+                ...state,
+                user: action.user
+            }
+
+        case 'GET_ADMIN_FAIL':
+            console.log('admin fail')
+            return {
+                ...state,
             }
 
         case 'LOGIN_SUCCESS':

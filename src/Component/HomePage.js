@@ -64,10 +64,15 @@ class Home extends Component {
             });
     }
 
+
+
     render() {
+        console.log(this.props.profile)
         const { auth } = this.props;
         const links = auth.uid ? <Success /> : <Fail />;
         const hay = auth.uid ? <Link to="/total">BẮT ĐẦU THI</Link> : <Link to="/signup">BẮT ĐẦU THI</Link>;
+        // const tieude
+
         return (
             <div>
                 {links}
@@ -124,7 +129,8 @@ class Home extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        profile: state.firebase.profile
     }
 
 }

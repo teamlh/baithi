@@ -127,6 +127,7 @@ th {
 
 td {
     text-align: center;
+    cursor: pointer;
 }
 
 .container {
@@ -229,30 +230,11 @@ img {
     max-width: 100%;
   }
 
-/* @media only screen
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
- 
+  .profilecanha {
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 56px;
 }
- 
-/* Portrait */
-/* @media only screen
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
- 
-}
- 
-/* Landscape */
-/* @media only screen
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
- 
-}*/
 
 
 @media screen and (max-width:1150px){
@@ -361,4 +343,93 @@ img {
         margin: 15px 236px;
         margin-left: -64%;
     }
+}
+
+/*avtar profile*/
+
+
+.avatar {
+    height: 150px;
+    position: relative;
+    width: 150px;
+    margin-bottom: 6px;
+  }
+  
+  .avatar img {
+    border-radius: 9999px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  @keyframes cycle-colors {
+    0% { border-color: hsl(0, 100%, 50%); }
+    25% { border-color: hsl(90, 100%, 50%); }
+    50% { border-color: hsl(180, 100%, 50%); }
+    75% { border-color: hsl(270, 100%, 50%); }
+    100% { border-color: hsl(360, 100%, 50%); }
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
+  .avatar::before,
+  .avatar::after {
+    animation: pulse 2s linear infinite;
+    border: #fff solid 8px;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    content: ' ';
+    height: 140%;
+    left: -20%;
+    opacity: .6;
+    position: absolute;
+    top: -20%;
+    transform: scale(0.714);
+    width: 140%;
+    z-index: 1;
+  }
+  
+  .avatar::after {
+    animation-delay: 1s;
+  }
+  
+  .avatar:hover img {
+    content: url('http://s.blixt.org/hypnotoad.jpg');
+  }
+  
+  .avatar:hover::before,
+  .avatar:hover::after {
+    animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+  }
+  
+  .avatar:hover::after {
+    animation-delay: .5s;
+  }
+
+  .quanlicanhan {
+    margin-left: 53px;
+}
+ button.hello {
+    position: absolute;
+    top: 38%;
+    left: 83%;
+    font-size: 12px;
+    border: 1px solid transparent;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+ span.hi {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 2px;
 }

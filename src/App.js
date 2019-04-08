@@ -7,6 +7,7 @@ import TotalQ from "./Component/TotalQuestion"
 import Details from "./Component/DetailQuestion"
 import Profile from "./Component/Profile"
 import Rule from "./Component/Rule"
+import Add from "./Component/AddExam"
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path={`/detail/:ID`} component={Details} />
             <Route path="/profile" component={Profile} />
             <Route path="/rule" component={Rule} />
+            <Route path="/add" component={Add} />
           </Switch>
         </Router>
       </div>
