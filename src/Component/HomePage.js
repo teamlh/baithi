@@ -16,7 +16,7 @@ class Home extends Component {
         this.state = {
             data: [],
             isSent: false,
-            isHide: false
+            isHide: this.props.auth.emailVerified
         };
     }
 
@@ -37,6 +37,7 @@ class Home extends Component {
     // }
 
     componentDidMount() {
+        console.log(this.state, );
         const itemsRef = firebase.database().ref('danhsach');
         itemsRef.on('value', (snapshot) => {
             let newState = [];
