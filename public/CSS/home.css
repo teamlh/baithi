@@ -332,6 +332,18 @@ img {
         margin: 15px 236px;
         margin-left: -2%;
     }
+    .emailv {
+        position: absolute;
+        border: 1px solid;
+        background: black;
+        color: white;
+        z-index: 999;
+        padding: 70px 0px;
+        border-radius: 5px;
+        margin-top: 18%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
 }
 
 
@@ -432,4 +444,17 @@ img {
     font-size: 20px;
     font-weight: 800;
     margin: 2px;
+}
+
+
+.emailv {
+    position: absolute;
+    border: 1px solid;
+    background: black;
+    color: white;
+    z-index: 999;
+    padding: 61px 17px;
+    border-radius: 5px;
+    margin-top: 18%;
+    margin-left: 12%;
 }

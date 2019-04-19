@@ -45,10 +45,16 @@ export const signUp = (newUser) => {
                 initials: newUser.firstName[0].toUpperCase() + newUser.lastName[0].toUpperCase(),
                 admin: newUser.admin
             });
-        }).then(() => {
-            dispatch({ type: 'SIGNUP_SUCCESS' });
-        }).catch((err) => {
-            dispatch({ type: 'SIGNUP_ERROR', err });
-        });
+        }).then(user => {
+            return firebase.auth().currentUser.sendEmailVerification();
+        })
+            .then(() => {
+                dispatch({ type: 'SIGNUP_SUCCESS' });
+            }).catch((err) => {
+                dispatch({ type: 'SIGNUP_ERROR', err });
+            });
     }
 }
+
+
+

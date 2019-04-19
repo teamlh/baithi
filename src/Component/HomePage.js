@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { signOut } from '././action/auth'
+import { signOut, signUp } from '././action/auth'
 import Success from "./Success"
 import Fail from "./Fail"
+import Email from "./Email"
 import { Link } from "react-router-dom"
 import firebase from "./firebase"
 import Dropdown from "react-dropdown"
-
+// import firebase from '../Component/firebase'
 
 
 class Home extends Component {
@@ -14,8 +15,26 @@ class Home extends Component {
         super(props);
         this.state = {
             data: [],
+            isSent: false,
+            isHide: false
         };
     }
+
+    // componentWillMount(next, fallback) {
+    //     firebase.auth().onAuthStateChanged(function (authUser) {
+    //         if (authUser) {
+    //             authUser = {
+    //                 uid: authUser.uid,
+    //                 email: authUser.email,
+    //                 emailVerified: authUser.emailVerified,
+    //                 providerData: authUser.providerData
+    //             };
+
+    //         } else {
+    //             fallback();
+    //         }
+    //     });
+    // }
 
     componentDidMount() {
         const itemsRef = firebase.database().ref('danhsach');
@@ -39,6 +58,8 @@ class Home extends Component {
 
         });
     }
+
+
 
     //function declartion for sorting by time
     sortByTime = (a, b) => {
@@ -65,16 +86,29 @@ class Home extends Component {
     }
 
 
+    onSendEmailVerification = () => {
+        firebase.auth().currentUser.sendEmailVerification({
+            url: "https://localhost:3000",
+        });
+
+        this.setState({ isSent: !this.state.isSent })
+    };
+
+    onHideButton = () => {
+        this.setState({ isHide: !this.state.isHide })
+    };
+
 
     render() {
-        console.log(this.props.profile)
         const { auth } = this.props;
+        console.log(auth.uid)
         const links = auth.uid ? <Success /> : <Fail />;
         const hay = auth.uid ? <Link to="/total">BẮT ĐẦU THI</Link> : <Link to="/signup">BẮT ĐẦU THI</Link>;
-        // const tieude
-
+        const email = this.state.isHide ? null : <Email isSent={this.state.isSent} isHide={this.state.isHide} onSendEmailVerification={this.onSendEmailVerification} onHideButton={this.onHideButton} />;
+        const met = auth.uid ? email : null;
         return (
             <div>
+                {met}
                 {links}
                 < div className="duoi" >
                     <div className="bangxephang">
@@ -136,6 +170,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
+        signUp: (creds) => dispatch(signUp(creds)),
         signOut: () => dispatch(signOut())
     }
 }
